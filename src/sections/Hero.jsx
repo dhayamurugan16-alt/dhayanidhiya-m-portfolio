@@ -41,7 +41,7 @@ export default function Hero() {
                 ═══════════════════════════════════════════════════════ */}
                 <motion.div {...fi(0)} className="hero-grid" style={{
                     display: 'grid',
-                    gridTemplateColumns: '260px 1fr 182px',
+                    gridTemplateColumns: '260px 1fr',
                     gap: 10,
                     alignItems: 'stretch',
                     minHeight: 460,
@@ -138,34 +138,32 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* Stack card */}
-                        <Spot style={{ padding: '20px 22px' }}>
-                            <p style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
-                                Core Stack
-                            </p>
-                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
-                                {STACK.map(t => <span key={t} className="tag">{t}</span>)}
-                            </div>
-                        </Spot>
-                    </div>
+                        {/* Bottom Row: Stack + Socials */}
+                        <div style={{ display: 'flex', gap: 10 }}>
+                            {/* Stack card */}
+                            <Spot style={{ padding: '20px 22px', flex: 1 }}>
+                                <p style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 12 }}>
+                                    Core Stack
+                                </p>
+                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
+                                    {STACK.map(t => <span key={t} className="tag">{t}</span>)}
+                                </div>
+                            </Spot>
 
-                    {/* ── RIGHT: Socials ────────────── */}
-                    <div className="hero-right-col" style={{ display: 'flex', flexDirection: 'column', gap: 10, justifyContent: 'flex-end' }}>
-
-
-                        {/* Socials card */}
-                        <Spot className="social-card" style={{ padding: '16px 14px' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                                {SOCIALS.map(({ Icon, href }) => (
-                                    <a key={href} href={href} target="_blank" rel="noreferrer"
-                                        style={{ width: 34, height: 34, display: 'grid', placeItems: 'center', borderRadius: 10, color: 'var(--muted)', textDecoration: 'none', transition: 'color .18s, background .18s' }}
-                                        onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; e.currentTarget.style.background = 'rgba(255,255,255,.05)' }}
-                                        onMouseLeave={e => { e.currentTarget.style.color = 'var(--muted)'; e.currentTarget.style.background = 'transparent' }}>
-                                        <Icon size={15} />
-                                    </a>
-                                ))}
-                            </div>
-                        </Spot>
+                            {/* Socials card */}
+                            <Spot className="social-card" style={{ padding: '16px 14px', width: (182 - 10), display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>
+                                    {SOCIALS.map(({ Icon, href }) => (
+                                        <a key={href} href={href} target="_blank" rel="noreferrer"
+                                            style={{ width: 34, height: 34, display: 'grid', placeItems: 'center', borderRadius: 10, color: 'var(--muted)', textDecoration: 'none', transition: 'color .18s, background .18s' }}
+                                            onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; e.currentTarget.style.background = 'rgba(255,255,255,.05)' }}
+                                            onMouseLeave={e => { e.currentTarget.style.color = 'var(--muted)'; e.currentTarget.style.background = 'transparent' }}>
+                                            <Icon size={15} />
+                                        </a>
+                                    ))}
+                                </div>
+                            </Spot>
+                        </div>
                     </div>
 
                 </motion.div>

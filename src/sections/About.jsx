@@ -17,14 +17,7 @@ const STACK = [
     'AWS', 'GCP', 'Vercel', 'GitHub Actions',
 ]
 
-const PRINCIPLES = [
-    { label: 'Systems over code', sub: 'Architecture decisions outlive syntax. I think in data flows, contracts, and invariants.' },
-    { label: 'Automate everything', sub: 'If it repeats, has conditions, and predictable outcomes — it must be automated.' },
-    { label: 'Observability first', sub: 'Systems you cannot measure, you cannot trust. Logs, metrics, traces from day one.' },
-    { label: 'Clarity over cleverness', sub: 'Code is read far more than written. Readability is a hard, non-negotiable requirement.' },
-    { label: 'Own the outcome', sub: 'From spec to prod to on-call. Engineers who ship own the full lifecycle.' },
-    { label: 'Continuous learning', sub: 'Technology compounds. Staying current is as critical as current delivery.' },
-]
+
 
 function Bento({ children, style = {}, accent = false }) {
     const ref = useRef(null)
@@ -130,29 +123,7 @@ export default function About() {
                     </Bento>
                 </motion.div>
 
-                {/* ── Engineering Principles bento ── */}
-                <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    style={{ marginBottom: 12 }}>
-                    <Bento style={{ padding: '36px 36px' }}>
-                        <p className="eyebrow">Engineering Principles</p>
-                        <div className="principles-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 0 }}>
-                            {PRINCIPLES.map((p, i) => (
-                                <div key={p.label} className="principle-cell" style={{
-                                    padding: '24px 28px 24px 0',
-                                    borderRight: (i % 3 !== 2) ? '1px solid var(--border)' : 'none',
-                                    borderBottom: (i < 3) ? '1px solid var(--border)' : 'none',
-                                    paddingLeft: (i % 3 !== 0) ? 28 : 0,
-                                }}>
-                                    <p style={{ fontFamily: 'Onest, sans-serif', fontWeight: 600, fontSize: 14.5, color: 'var(--text)', marginBottom: 8 }}>
-                                        {p.label}
-                                    </p>
-                                    <p style={{ color: 'var(--muted)', fontSize: 13, lineHeight: 1.75 }}>{p.sub}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </Bento>
-                </motion.div>
+
 
 
             </div>
