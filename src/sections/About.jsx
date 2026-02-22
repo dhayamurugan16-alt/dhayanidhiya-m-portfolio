@@ -2,19 +2,17 @@ import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 
 const SKILLS = [
-    { name: 'Back-End / APIs', pct: 92 },
-    { name: 'System Design', pct: 87 },
-    { name: 'Front-End (React)', pct: 84 },
-    { name: 'DevOps / Cloud', pct: 80 },
-    { name: 'Data Engineering', pct: 74 },
+    { name: 'Full Stack Development', pct: 92 },
+    { name: 'Data Analytics', pct: 87 },
 ]
 
 const STACK = [
-    'TypeScript', 'JavaScript', 'Python', 'Go',
-    'React', 'Next.js', 'Node.js', 'Express', 'Fastify',
-    'PostgreSQL', 'MongoDB', 'Redis', 'ClickHouse',
-    'Docker', 'Kubernetes', 'Terraform',
-    'AWS', 'GCP', 'Vercel', 'GitHub Actions',
+    'React',
+    'Node.js',
+    'Typescript',
+    'Python',
+    'Java',
+    'PowerBI',
 ]
 
 const FACTS = [
@@ -74,9 +72,9 @@ export default function About() {
                             </p>
                             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 4 }}>
                                 {[
-                                    { l: 'GitHub →', h: 'https://github.com' },
-                                    { l: 'LinkedIn →', h: 'https://linkedin.com' },
-                                    { l: 'Email →', h: 'mailto:dhaya@example.com' },
+                                    { l: 'GitHub →', h: 'https://github.com/dhayamurugan16-alt/' },
+                                    { l: 'LinkedIn →', h: 'https://linkedin.com/in/dhayanidhiya-m-99072728b/' },
+                                    { l: 'Email →', h: 'mailto:dhayamurugan16@gmail.com' },
                                 ].map(a => (
                                     <a key={a.l} href={a.h} target="_blank" rel="noreferrer"
                                         style={{ fontSize: 13, fontWeight: 500, color: 'var(--muted)', textDecoration: 'none', transition: 'color .2s' }}

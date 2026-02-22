@@ -52,7 +52,7 @@ export default function Footer() {
                         </a>
 
                         {/* LinkedIn card */}
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+                        <a href="https://linkedin.com/in/dhayanidhiya-m-99072728b/" target="_blank" rel="noreferrer"
                             style={{ textDecoration: 'none' }}>
                             <div className="bento" style={{ padding: '28px 28px', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: 16 }} >
                                 <div className="spot" />
