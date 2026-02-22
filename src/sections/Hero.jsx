@@ -69,7 +69,7 @@ export default function Hero() {
                                 display: 'flex', flexDirection: 'column', gap: 1,
                             }}>
                                 <p style={{ fontFamily: 'Onest', fontWeight: 700, fontSize: 14.5, color: '#fff', lineHeight: 1.2 }}>
-                                    Dhayananth
+                                    Dhayanidhiya M
                                 </p>
                                 <p style={{ fontSize: 11.5, color: 'rgba(255,255,255,.5)' }}>Software Engineer</p>
                             </div>

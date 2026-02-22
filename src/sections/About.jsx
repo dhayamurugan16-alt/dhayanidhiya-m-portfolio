@@ -2,19 +2,15 @@ import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
 
 const SKILLS = [
-    { name: 'Back-End / APIs', pct: 92 },
-    { name: 'System Design', pct: 87 },
-    { name: 'Front-End (React)', pct: 84 },
-    { name: 'DevOps / Cloud', pct: 80 },
-    { name: 'Data Engineering', pct: 74 },
+    { name: 'Full Stack Development', pct: 92 },
+    { name: 'Python', pct: 87 },
+    { name: 'Java', pct: 84 },
+    { name: 'Data Analysis', pct: 80 },
 ]
 
 const STACK = [
-    'TypeScript', 'JavaScript', 'Python', 'Go',
-    'React', 'Next.js', 'Node.js', 'Express', 'Fastify',
-    'PostgreSQL', 'MongoDB', 'Redis', 'ClickHouse',
-    'Docker', 'Kubernetes', 'Terraform',
-    'AWS', 'GCP', 'Vercel', 'GitHub Actions',
+    'React', 'Node.js', 'TypeScript', 'Python',
+    'Java', 'PowerBI', 'Unreal Engine 5',
 ]
 
 
