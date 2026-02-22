@@ -54,7 +54,7 @@ export default function About() {
                         <p className="eyebrow">My Story</p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                             <p style={{ color: 'var(--muted)', fontSize: 16.5, lineHeight: 1.88 }}>
-                                I'm a <span style={{ color: 'var(--text)', fontWeight: 500 }}>Motivated Computer Science Engineering</span>
+                                I'm a <span style={{ color: 'var(--text)', fontWeight: 500 }}>Motivated Computer Science Engineering </span>
                                 student with practical experience in full-stack web development and a
                                 strong foundation in programming principles. Proficient in developing
                                 responsive and dynamic web applications using HTML, CSS, JavaScript,
