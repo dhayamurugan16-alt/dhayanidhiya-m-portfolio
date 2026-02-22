@@ -54,14 +54,17 @@ export default function About() {
                         <p className="eyebrow">My Story</p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                             <p style={{ color: 'var(--muted)', fontSize: 16.5, lineHeight: 1.88 }}>
-                                I'm a <span style={{ color: 'var(--text)', fontWeight: 500 }}>full-stack Software Engineer</span> based
-                                in Chennai, India. I build high-performance web apps and robust back-end systems — from
-                                clean REST APIs to cloud-native microservice architectures.
+                                I'm a <span style={{ color: 'var(--text)', fontWeight: 500 }}>Motivated Computer Science Engineering</span>
+                                student with practical experience in full-stack web development and a
+                                strong foundation in programming principles. Proficient in developing
+                                responsive and dynamic web applications using HTML, CSS, JavaScript,
+                                and modern frameworks. Gained valuable industry exposure through
+                                internships and hands-on projects.
                             </p>
                             <p style={{ color: 'var(--muted)', fontSize: 16.5, lineHeight: 1.88 }}>
-                                With 3+ years in the industry, I've designed scalable data models, shipped pixel-perfect
-                                UIs, and taken systems to production on AWS and GCP. I contribute to open source and
-                                mentor engineers in my local tech community.
+                                Certified in C, Full Stack Development, Python, Java, with a passion for continuous learning
+                                and emerging technologies. Committed to contributing effectively within collaborative teams
+                                and delivering high-quality, scalable software solutions.
                             </p>
                             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 4 }}>
                                 {[

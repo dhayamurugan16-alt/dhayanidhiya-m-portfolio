@@ -4,8 +4,7 @@ import { Award, Zap } from 'lucide-react'
 
 const AWARDS = [
     { title: 'Demonstrated strong teamwork and coordination skills while collaborating with peers during internships and project development.' },
-    { title: 'Open Source Contributor Award', year: '2022–23', desc: 'Patches merged in React Query, tRPC, and Vite — 15+ accepted pull requests.' },
-    { title: "Dean's List · B.E. CS", year: '2021', desc: 'Anna University · CGPA 8.7 / 10 · First Division with Distinction.' },
+    { title: 'Actively participated in internship programs, showing initiative, adaptability, and commitment to learning in professional environments.' },
 ]
 const CERTS = [
     { title: 'Oracle Certified Generative AI Professional.', org: 'Oracle', year: '2024' },
