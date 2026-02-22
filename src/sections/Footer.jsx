@@ -1,12 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react'
+import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react'
 
 const SOCIALS = [
-    { icon: <Github size={17} />, label: 'GitHub', href: 'https://github.com' },
-    { icon: <Linkedin size={17} />, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: <Twitter size={17} />, label: 'Twitter', href: 'https://twitter.com' },
-    { icon: <Mail size={17} />, label: 'Email', href: 'mailto:dhaya@example.com' },
+    { icon: <Github size={17} />, label: 'GitHub', href: 'https://github.com/dhayamurugan16-alt/' },
+    { icon: <Linkedin size={17} />, label: 'LinkedIn', href: 'https://linkedin./in/dhayanidhiya-m-99072728b/' },
+    { icon: <Mail size={17} />, label: 'Email', href: 'mailto:dhayamurugan16@gmail.com' },
 ]
 
 export default function Footer() {
@@ -35,7 +34,7 @@ export default function Footer() {
                     {/* Two contact bento cards */}
                     <div className="cta-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, width: '100%', maxWidth: 640 }}>
                         {/* Email card */}
-                        <a href="mailto:dhaya@example.com"
+                        <a href="mailto:dhayamurugan16@gmail.com"
                             style={{ textDecoration: 'none' }}>
                             <div className="bento bento-tint" style={{ padding: '28px 28px', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: 16 }}>
                                 <div className="spot" />
@@ -44,7 +43,7 @@ export default function Footer() {
                                     <p style={{ fontFamily: 'Onest, sans-serif', fontWeight: 600, fontSize: 15, color: 'var(--text)', marginBottom: 4 }}>
                                         Send an email
                                     </p>
-                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>dhaya@example.com</p>
+                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>dhayamurugan16@gmail.com</p>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                                     <ArrowUpRight size={16} style={{ color: 'var(--accent)' }} />
@@ -53,7 +52,7 @@ export default function Footer() {
                         </a>
 
                         {/* LinkedIn card */}
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+                        <a href="https://linkedin./in/dhayanidhiya-m-99072728b/" target="_blank" rel="noreferrer"
                             style={{ textDecoration: 'none' }}>
                             <div className="bento" style={{ padding: '28px 28px', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: 16 }} >
                                 <div className="spot" />
@@ -62,7 +61,7 @@ export default function Footer() {
                                     <p style={{ fontFamily: 'Onest, sans-serif', fontWeight: 600, fontSize: 15, color: 'var(--text)', marginBottom: 4 }}>
                                         Connect on LinkedIn
                                     </p>
-                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>in/dhayananth</p>
+                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>linkedin./in/dhayanidhiya-m-99072728b/</p>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                                     <ArrowUpRight size={16} style={{ color: 'var(--muted)' }} />
@@ -87,7 +86,7 @@ export default function Footer() {
                         <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>Dhaya.</span>
                     </div>
 
-                    <p style={{ color: 'var(--muted)', fontSize: 12 }}>© {year} Dhayananth. All rights reserved.</p>
+                    <p style={{ color: 'var(--muted)', fontSize: 12 }}>© {year} Dhayanidhiya M. All rights reserved.</p>
 
                     {/* Socials */}
                     <div style={{ display: 'flex', gap: 20 }}>

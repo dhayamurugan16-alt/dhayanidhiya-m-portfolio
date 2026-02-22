@@ -7,37 +7,31 @@ const PROJECTS = [
         id: 1, title: 'CloudSync', year: '2024', cat: 'Full Stack', featured: true,
         desc: 'Real-time multi-user collaboration with operational transforms, conflict resolution, and enterprise RBAC.',
         stack: ['React', 'Node.js', 'WebSocket', 'Redis', 'PostgreSQL'],
-        img: 'https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=900&auto=format&fit=crop&q=80',
     },
     {
         id: 2, title: 'Nexus CRM', year: '2024', cat: 'SaaS', featured: true,
         desc: 'AI-powered CRM with lead scoring, deal forecasting, automated follow-ups, and real-time analytics.',
         stack: ['Next.js', 'TypeScript', 'Prisma', 'OpenAI', 'PostgreSQL'],
-        img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop&q=80',
     },
     {
         id: 3, title: 'PayFlow', year: '2023', cat: 'Backend',
         desc: 'PCI-compliant payment gateway supporting Stripe, Razorpay & UPI with idempotent retry logic.',
         stack: ['Node.js', 'Stripe', 'MongoDB', 'Docker', 'Redis'],
-        img: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&auto=format&fit=crop&q=80',
     },
     {
         id: 4, title: 'DataVault', year: '2023', cat: 'Data & BI',
         desc: 'Self-hosted BI platform with drag-and-drop report builder and D3-powered charts.',
         stack: ['React', 'D3.js', 'Python', 'FastAPI', 'ClickHouse'],
-        img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop&q=80',
     },
     {
         id: 5, title: 'DevOps Hub', year: '2022', cat: 'DevOps',
         desc: 'Internal developer platform with CI/CD pipelines, K8s monitoring, and deploy genealogy.',
         stack: ['Go', 'React', 'Kubernetes', 'Helm', 'Prometheus'],
-        img: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&auto=format&fit=crop&q=80',
     },
     {
         id: 6, title: 'ThreadAI', year: '2022', cat: 'AI Tooling',
         desc: 'GPT-4 Slack bot that summarises threads, schedules meetings, and drafts context-aware replies.',
         stack: ['Node.js', 'Slack API', 'OpenAI', 'Redis', 'Vercel'],
-        img: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&auto=format&fit=crop&q=80',
     },
 ]
 
@@ -58,39 +52,6 @@ function Card({ p }) {
             style={{ display: 'flex', flexDirection: 'column', cursor: 'default' }}>
             <div className="spot" />
 
-            {/* Image */}
-            <div style={{ position: 'relative', overflow: 'hidden', height: 185, borderRadius: '20px 20px 0 0', flexShrink: 0 }}>
-                <img src={p.img} alt={p.title} className="proj-img" loading="lazy" />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, var(--surf) 0%, transparent 60%)' }} />
-
-                {p.featured && (
-                    <div style={{
-                        position: 'absolute', top: 11, left: 11,
-                        fontSize: 9.5, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase',
-                        color: '#0a0a0a', background: 'var(--accent)',
-                        padding: '3px 9px', borderRadius: 5,
-                    }}>Featured</div>
-                )}
-
-                <div className="card-links" style={{
-                    position: 'absolute', top: 11, right: 11,
-                    display: 'flex', gap: 7, opacity: 0, transition: 'opacity .2s',
-                }}>
-                    {[{ Icon: Github, label: 'GitHub' }, { Icon: ExternalLink, label: 'Live' }].map(({ Icon, label }) => (
-                        <a key={label} href="#" aria-label={label}
-                            style={{
-                                width: 32, height: 32, borderRadius: 9, display: 'grid', placeItems: 'center',
-                                background: 'rgba(10,10,10,.85)', backdropFilter: 'blur(8px)',
-                                color: 'var(--muted)', textDecoration: 'none',
-                                border: '1px solid var(--border)', transition: 'color .16s, border-color .16s',
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.borderColor = 'var(--accent-br)' }}
-                            onMouseLeave={e => { e.currentTarget.style.color = 'var(--muted)'; e.currentTarget.style.borderColor = 'var(--border)' }}>
-                            <Icon size={12} />
-                        </a>
-                    ))}
-                </div>
-            </div>
 
             {/* Body */}
             <div style={{ padding: '20px 22px 24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
