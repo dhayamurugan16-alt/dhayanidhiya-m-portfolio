@@ -17,6 +17,24 @@ const STACK = [
     'AWS', 'GCP', 'Vercel', 'GitHub Actions',
 ]
 
+const PRINCIPLES = [
+    { label: 'Systems over code', sub: 'Architecture decisions outlive syntax. I think in data flows, contracts, and invariants.' },
+    { label: 'Automate everything', sub: 'If it repeats, has conditions, and predictable outcomes — it must be automated.' },
+    { label: 'Observability first', sub: 'Systems you cannot measure, you cannot trust. Logs, metrics, traces from day one.' },
+    { label: 'Clarity over cleverness', sub: 'Code is read far more than written. Readability is a hard, non-negotiable requirement.' },
+    { label: 'Own the outcome', sub: 'From spec to prod to on-call. Engineers who ship own the full lifecycle.' },
+    { label: 'Continuous learning', sub: 'Technology compounds. Staying current is as critical as current delivery.' },
+]
+
+const SETUP = [
+    { label: 'OS', val: 'macOS 14' },
+    { label: 'Editor', val: 'VS Code' },
+    { label: 'Terminal', val: 'WezTerm' },
+    { label: 'Shell', val: 'Zsh + Oh-My' },
+    { label: 'Font', val: 'Geist Mono' },
+    { label: 'Theme', val: 'Tokyo Night' },
+]
+
 const FACTS = [
     { k: 'Location', v: 'Chennai, India' },
     { k: 'Status', v: 'Available for hire', accent: true },
