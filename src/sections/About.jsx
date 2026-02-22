@@ -26,24 +26,6 @@ const PRINCIPLES = [
     { label: 'Continuous learning', sub: 'Technology compounds. Staying current is as critical as current delivery.' },
 ]
 
-const SETUP = [
-    { label: 'OS', val: 'macOS 14' },
-    { label: 'Editor', val: 'VS Code' },
-    { label: 'Terminal', val: 'WezTerm' },
-    { label: 'Shell', val: 'Zsh + Oh-My' },
-    { label: 'Font', val: 'Geist Mono' },
-    { label: 'Theme', val: 'Tokyo Night' },
-]
-
-const FACTS = [
-    { k: 'Location', v: 'Chennai, India' },
-    { k: 'Status', v: 'Available for hire', accent: true },
-    { k: 'Experience', v: '3+ years' },
-    { k: 'Projects', v: '25+ shipped' },
-    { k: 'Education', v: 'B.E. CS · Anna University' },
-    { k: 'Languages', v: 'English, Tamil' },
-]
-
 function Bento({ children, style = {}, accent = false }) {
     const ref = useRef(null)
     const move = e => {
@@ -76,7 +58,7 @@ export default function About() {
                 <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     className="bio-row"
-                    style={{ display: 'grid', gridTemplateColumns: '1fr 280px', gap: 12, marginBottom: 12 }}>
+                    style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 12, marginBottom: 12 }}>
 
                     {/* Bio text bento */}
                     <Bento style={{ padding: '36px 40px' }}>
@@ -109,24 +91,6 @@ export default function About() {
                         </div>
                     </Bento>
 
-                    {/* Quick facts bento */}
-                    <Bento style={{ padding: '28px 24px' }}>
-                        <p className="eyebrow">Quick Facts</p>
-                        <div>
-                            {FACTS.map((f, i) => (
-                                <div key={f.k} style={{
-                                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                                    padding: '12px 0',
-                                    borderBottom: i < FACTS.length - 1 ? '1px solid var(--border)' : 'none',
-                                }}>
-                                    <span style={{ color: 'var(--muted)', fontSize: 12 }}>{f.k}</span>
-                                    <span style={{ fontSize: 12.5, fontWeight: 500, color: f.accent ? 'var(--accent)' : 'var(--text)' }}>
-                                        {f.v}
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
-                    </Bento>
                 </motion.div>
 
                 {/* ── Skills + Stack bento row ── */}
@@ -190,25 +154,6 @@ export default function About() {
                     </Bento>
                 </motion.div>
 
-                {/* ── Setup bento ── */}
-                <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}>
-                    <Bento style={{ padding: '10px 0' }}>
-                        <p className="eyebrow">My Setup</p>
-                        <div className="setup-6" style={{ display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', gap: 0 }}>
-                            {SETUP.map((s, i) => (
-                                <div key={s.label} className="setup-cell" style={{
-                                    padding: '20px 24px',
-                                    borderRight: i < SETUP.length - 1 ? '1px solid var(--border)' : 'none',
-                                    display: 'flex', flexDirection: 'column', gap: 4
-                                }}>
-                                    <span style={{ color: 'var(--muted)', fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>{s.label}</span>
-                                    <span style={{ color: 'var(--text)', fontSize: 12.5, fontWeight: 500 }}>{s.val}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </Bento>
-                </motion.div>
 
             </div>
         </section>
