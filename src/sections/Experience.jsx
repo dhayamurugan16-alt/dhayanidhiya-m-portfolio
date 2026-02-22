@@ -24,7 +24,7 @@ const EXP = [
         dur: 'December 2024',
         loc: 'Chennai, India',
         points: [
-            'Gained Hands-On Experience in Front-End Web development.',
+            'Gained Hands-On Experience in Front-End Web Development.',
             'Reduced API p95 latency from 800 ms to 120 ms via query optimisation and Redis caching.',
             'Architected Kafka event streaming, processing 1M+ events/day across decoupled microservices.',
             'Mentored 5 junior engineers through weekly code reviews and system design sessions.',
@@ -106,17 +106,7 @@ export default function Experience() {
                                 </span>
                                 <div style={{ display: 'flex', gap: 6, marginTop: 4, flexWrap: 'wrap' }}>
                                     <span className="tag" style={{ alignSelf: 'flex-start', fontSize: 11 }}>{e.type}</span>
-                                    {i === 0 && (
-                                        <span style={{
-                                            display: 'inline-flex', alignItems: 'center', gap: 5,
-                                            fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase',
-                                            padding: '4px 10px', borderRadius: 6,
-                                            background: 'var(--accent-bg)', border: '1px solid var(--accent-br)', color: 'var(--accent)',
-                                        }}>
-                                            <span style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--accent)' }} />
-                                            Current
-                                        </span>
-                                    )}
+
                                 </div>
                             </div>
 
@@ -138,9 +128,7 @@ export default function Experience() {
                                     ))}
                                 </ul>
 
-                                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 7 }}>
-                                    {e.stack.map(t => <span key={t} className="tag" style={{ fontSize: 11 }}>{t}</span>)}
-                                </div>
+
                             </div>
                         </motion.div>
                     ))}
