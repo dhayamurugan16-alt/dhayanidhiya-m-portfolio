@@ -29,7 +29,6 @@ const EXP = [
             'Architected Kafka event streaming, processing 1M+ events/day across decoupled microservices.',
             'Mentored 5 junior engineers through weekly code reviews and system design sessions.',
         ],
-        stack: ['HTML', 'CSS', 'JavaScript'],
     },
     {
         role: 'Software Engineer II',
@@ -42,32 +41,6 @@ const EXP = [
             'Designed Python ETL pipeline ingesting 50 GB+ of data daily into ClickHouse.',
             'Integrated Stripe with idempotent webhook handling, cutting payment failures by 40%.',
         ],
-        stack: ['Python', 'React', 'D3.js', 'ClickHouse', 'Stripe', 'GCP'],
-    },
-    {
-        role: 'Software Engineer',
-        company: 'CodeBridge',
-        dur: 'Aug 2021 – Jun 2022',
-        loc: 'Chennai, India',
-        type: 'Full-time',
-        points: [
-            'Delivered 10+ REST API modules for a logistics platform handling 50K shipments/month.',
-            'Implemented role-based access control, eliminating all unauthorised-access incidents.',
-            'Maintained 85%+ test coverage across all back-end services using Jest + Supertest.',
-        ],
-        stack: ['Node.js', 'Express', 'MongoDB', 'Jest', 'GitHub Actions'],
-    },
-    {
-        role: 'Software Engineering Intern',
-        company: 'Nimble Tech',
-        dur: 'Feb 2021 – Jul 2021',
-        loc: 'Chennai, India',
-        type: 'Internship',
-        points: [
-            'Built React components for a healthcare portal, lifting patient self-service completion by 30%.',
-            'Fixed bugs and improved performance across 4 production back-end services.',
-        ],
-        stack: ['React', 'Node.js', 'MySQL'],
     },
 ]
 
