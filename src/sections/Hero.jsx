@@ -23,7 +23,7 @@ function Spot({ children, style = {}, className = '' }) {
     )
 }
 
-const STACK = ['TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Redis', 'Docker', 'AWS', 'Kubernetes']
+const STACK = ['React', 'Node.js', 'TypeScript', 'Python', 'Java', 'PowerBI', 'Unreal Engine 5']
 const SOCIALS = [
     { Icon: Github, href: 'https://github.com/dhayamurugan16-alt/' },
     { Icon: Linkedin, href: 'https://linkedin./in/dhayanidhiya-m-99072728b/' },
