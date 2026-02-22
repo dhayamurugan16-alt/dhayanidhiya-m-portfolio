@@ -1,24 +1,18 @@
 import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Trophy, Star, BookOpen, Code2, Award, Zap } from 'lucide-react'
+import { Award, Zap } from 'lucide-react'
 
-const STATS = [
-    { n: '5+', l: 'Certifications', icon: <BookOpen size={17} /> },
-    { n: '3', l: 'Awards Won', icon: <Trophy size={17} /> },
-    { n: '15+', l: 'OSS Contributions', icon: <Code2 size={17} /> },
-    { n: '8.7', l: 'University CGPA', icon: <Star size={17} /> },
-]
 const AWARDS = [
-    { title: 'HackIndia 2023 — 1st Place', year: '2023', desc: 'Built an AI-powered logistics optimiser among 400+ teams nationwide.' },
+    { title: 'Demonstrated strong teamwork and coordination skills while collaborating with peers during internships and project development.' },
     { title: 'Open Source Contributor Award', year: '2022–23', desc: 'Patches merged in React Query, tRPC, and Vite — 15+ accepted pull requests.' },
     { title: "Dean's List · B.E. CS", year: '2021', desc: 'Anna University · CGPA 8.7 / 10 · First Division with Distinction.' },
 ]
 const CERTS = [
-    { title: 'AWS Certified Solutions Architect', org: 'Amazon Web Services', year: '2024' },
-    { title: 'Google Cloud Professional Data Engineer', org: 'Google Cloud', year: '2023' },
-    { title: 'Certified Kubernetes App Developer (CKAD)', org: 'CNCF', year: '2023' },
-    { title: 'Meta Front-End Developer Certificate', org: 'Coursera / Meta', year: '2022' },
-    { title: 'Node.js Application Developer', org: 'OpenJS Foundation', year: '2022' },
+    { title: 'Oracle Certified Generative AI Professional.', org: 'Oracle', year: '2024' },
+    { title: 'Internship in Web Development', org: 'CodeBind Technologies', year: '2024' },
+    { title: 'Internship Completion Certificate', org: 'AK Designing Studio', year: '2024' },
+    { title: 'Acquiring Data Certificate (Bronze Category).', org: 'NASSCOM', year: '2024' },
+    { title: 'Certificate in C Programming.', year: '2024' },
 ]
 
 function Bento({ children, style = {}, tint = false }) {
@@ -48,27 +42,7 @@ export default function Achievements() {
                     <h2 className="d-lg" style={{ color: 'var(--text)' }}>Achievements.</h2>
                 </motion.div>
 
-                {/* Stats row */}
-                <motion.div initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="stats-4"
-                    style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 10, marginBottom: 10 }}>
-                    {STATS.map((s, i) => (
-                        <Bento key={s.l} tint={i === 0}
-                            style={{ padding: '26px 22px', display: 'flex', flexDirection: 'column', gap: 14 }}>
-                            <div style={{ color: i === 0 ? 'var(--accent)' : 'var(--muted)' }}>{s.icon}</div>
-                            <div>
-                                <p style={{
-                                    fontFamily: 'Onest, sans-serif', fontWeight: 900,
-                                    fontSize: '2.4rem', letterSpacing: '-0.055em',
-                                    color: i === 0 ? 'var(--accent)' : 'var(--text)',
-                                    lineHeight: 1, marginBottom: 5,
-                                }}>{s.n}</p>
-                                <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>{s.l}</p>
-                            </div>
-                        </Bento>
-                    ))}
-                </motion.div>
+
 
                 {/* Awards + Certs */}
                 <div className="two-col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
