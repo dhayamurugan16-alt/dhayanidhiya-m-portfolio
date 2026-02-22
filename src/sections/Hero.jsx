@@ -150,7 +150,7 @@ export default function Hero() {
                     </div>
 
                     {/* ── RIGHT: Socials ────────────── */}
-                    <div className="hero-right-col" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                    <div className="hero-right-col" style={{ display: 'flex', flexDirection: 'column', gap: 10, justifyContent: 'flex-end' }}>
 
 
                         {/* Socials card */}
