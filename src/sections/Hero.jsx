@@ -117,8 +117,7 @@ export default function Hero() {
                                     Dhayanidhiya M
                                 </h1>
                                 <p style={{ color: 'rgba(0,0,0,0.55)', fontSize: 14.5, lineHeight: 1.75, maxWidth: 380 }}>
-                                    I build <strong style={{ color: 'rgba(0,0,0,0.8)' }}>scalable back-end systems</strong> and
-                                    precise interfaces — from architecture to deployment.
+                                    Building <strong style={{ color: 'rgba(0,0,0,0.8)' }}>Impactful Digital</strong> Solutions
                                 </p>
                             </div>
 
