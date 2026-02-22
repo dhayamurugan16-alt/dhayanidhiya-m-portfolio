@@ -53,7 +53,7 @@ export default function Hero() {
                         {/* Photo card */}
                         <div className="bento hero-photo" style={{ flex: 1, overflow: 'hidden', position: 'relative', minHeight: 310 }}>
                             <img
-                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=520&auto=format&fit=crop&q=88"
+                                src="src\assets\dhaya.jpeg"
                                 alt="Dhayanidhiya M — Software Engineer"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
                             />
