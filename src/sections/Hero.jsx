@@ -149,35 +149,9 @@ export default function Hero() {
                         </Spot>
                     </div>
 
-                    {/* ── RIGHT: 3 stat cards + socials ────────────── */}
+                    {/* ── RIGHT: Socials ────────────── */}
                     <div className="hero-right-col" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
 
-                        {/* Stat: Years */}
-                        <Spot className="stat-card" style={{ flex: 1, padding: '22px 20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                            <p style={{ fontSize: 11, color: 'var(--muted)', fontWeight: 500 }}>Experience</p>
-                            <div>
-                                <p className="bento-num" style={{ color: 'var(--text)' }}>3+</p>
-                                <p style={{ color: 'var(--muted)', fontSize: 12, marginTop: 4 }}>Years</p>
-                            </div>
-                        </Spot>
-
-                        {/* Stat: Projects */}
-                        <Spot className="stat-card" style={{ flex: 1, padding: '22px 20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                            <p style={{ fontSize: 11, color: 'var(--muted)', fontWeight: 500 }}>Portfolio</p>
-                            <div>
-                                <p className="bento-num" style={{ color: 'var(--accent)' }}>25+</p>
-                                <p style={{ color: 'var(--muted)', fontSize: 12, marginTop: 4 }}>Projects</p>
-                            </div>
-                        </Spot>
-
-                        {/* Stat: Clients */}
-                        <Spot className="stat-card" style={{ flex: 1, padding: '22px 20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                            <p style={{ fontSize: 11, color: 'var(--muted)', fontWeight: 500 }}>Clients</p>
-                            <div>
-                                <p className="bento-num" style={{ color: 'var(--text)' }}>10+</p>
-                                <p style={{ color: 'var(--muted)', fontSize: 12, marginTop: 4 }}>Happy</p>
-                            </div>
-                        </Spot>
 
                         {/* Socials card */}
                         <Spot className="social-card" style={{ padding: '16px 14px' }}>
