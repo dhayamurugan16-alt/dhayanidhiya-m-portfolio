@@ -25,7 +25,7 @@ function Spot({ children, style = {}, className = '' }) {
 
 const STACK = ['TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Redis', 'Docker', 'AWS', 'Kubernetes']
 const SOCIALS = [
-    { Icon: Github, href: 'https://github.com/dhayamurugan16-alt' },
+    { Icon: Github, href: 'https://github.com/dhayamurugan16-alt/' },
     { Icon: Linkedin, href: 'https://linkedin.com' },
     { Icon: Mail, href: 'mailto:dhayamurugan16@gmail.com' },
 ]
