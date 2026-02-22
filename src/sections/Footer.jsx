@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react'
 
 const SOCIALS = [
     { icon: <Github size={17} />, label: 'GitHub', href: 'https://github.com/dhayamurugan16-alt' },
-    { icon: <Linkedin size={17} />, label: 'LinkedIn', href: 'https://linkedin.com' },
+    { icon: <Linkedin size={17} />, label: 'LinkedIn', href: 'https://linkedin.com/in/dhayanidhiya-m-99072728b/' },
     { icon: <Mail size={17} />, label: 'Email', href: 'mailto:dhayamurugan16@gmail.com' },
 ]
 
@@ -34,7 +34,7 @@ export default function Footer() {
                     {/* Two contact bento cards */}
                     <div className="cta-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, width: '100%', maxWidth: 640 }}>
                         {/* Email card */}
-                        <a href="mailto:dhaya@example.com"
+                        <a href="mailto:dhayamurugan16@gmail.com"
                             style={{ textDecoration: 'none' }}>
                             <div className="bento bento-tint" style={{ padding: '28px 28px', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: 16 }}>
                                 <div className="spot" />
@@ -43,7 +43,7 @@ export default function Footer() {
                                     <p style={{ fontFamily: 'Onest, sans-serif', fontWeight: 600, fontSize: 15, color: 'var(--text)', marginBottom: 4 }}>
                                         Send an email
                                     </p>
-                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>dhaya@example.com</p>
+                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>dhayamurugan16@gmail.com</p>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                                     <ArrowUpRight size={16} style={{ color: 'var(--accent)' }} />
@@ -61,7 +61,7 @@ export default function Footer() {
                                     <p style={{ fontFamily: 'Onest, sans-serif', fontWeight: 600, fontSize: 15, color: 'var(--text)', marginBottom: 4 }}>
                                         Connect on LinkedIn
                                     </p>
-                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>in/dhayananth</p>
+                                    <p style={{ color: 'var(--muted)', fontSize: 12.5 }}>dhayanidhiya-m-99072728b</p>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                                     <ArrowUpRight size={16} style={{ color: 'var(--muted)' }} />
