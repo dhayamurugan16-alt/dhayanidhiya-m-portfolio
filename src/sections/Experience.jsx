@@ -19,56 +19,24 @@ function Bento({ children, style = {} }) {
 
 const EXP = [
     {
-        role: 'Senior Software Engineer',
-        company: 'TechNova Solutions',
-        dur: 'Jan 2024 – Present',
+        role: 'Web Development',
+        company: 'Intern, CODEBIND TECHNOLOGIES',
+        dur: 'December 2024',
         loc: 'Chennai, India',
-        type: 'Full-time',
         points: [
-            'Lead a multi-tenant SaaS platform serving 500+ enterprise clients at 99.97% uptime.',
-            'Reduced API p95 latency from 800 ms to 120 ms via query optimisation and Redis caching.',
-            'Architected Kafka event streaming, processing 1M+ events/day across decoupled microservices.',
-            'Mentored 5 junior engineers through weekly code reviews and system design sessions.',
+            'Gained Hands-On Experience in Front-End Web Wevelopment.',
+            'Developed a Event Management website using HTML, CSS, Java Script.',
         ],
-        stack: ['Node.js', 'React', 'PostgreSQL', 'Redis', 'Kafka', 'AWS'],
     },
     {
-        role: 'Software Engineer II',
-        company: 'Stellar Labs',
-        dur: 'Jul 2022 – Dec 2023',
-        loc: 'Remote',
-        type: 'Full-time',
-        points: [
-            'Built analytics dashboard (React + D3.js) adopted by 2,000+ users within 3 months.',
-            'Designed Python ETL pipeline ingesting 50 GB+ of data daily into ClickHouse.',
-            'Integrated Stripe with idempotent webhook handling, cutting payment failures by 40%.',
-        ],
-        stack: ['Python', 'React', 'D3.js', 'ClickHouse', 'Stripe', 'GCP'],
-    },
-    {
-        role: 'Software Engineer',
-        company: 'CodeBridge',
-        dur: 'Aug 2021 – Jun 2022',
+        role: 'Game Development - GDD',
+        company: 'Monolith Research and Training Labs Pvt. Ltd.',
+        dur: 'June 2025 - September 2025',
         loc: 'Chennai, India',
-        type: 'Full-time',
         points: [
-            'Delivered 10+ REST API modules for a logistics platform handling 50K shipments/month.',
-            'Implemented role-based access control, eliminating all unauthorised-access incidents.',
-            'Maintained 85%+ test coverage across all back-end services using Jest + Supertest.',
+            'Gained Hands-On Experience working in a professional IT environment with guidance from senior mentors.',
+            'Improved Technical Skills, Problem-Solving Ability, and Teamwork through assigned tasks and projects.',
         ],
-        stack: ['Node.js', 'Express', 'MongoDB', 'Jest', 'GitHub Actions'],
-    },
-    {
-        role: 'Software Engineering Intern',
-        company: 'Nimble Tech',
-        dur: 'Feb 2021 – Jul 2021',
-        loc: 'Chennai, India',
-        type: 'Internship',
-        points: [
-            'Built React components for a healthcare portal, lifting patient self-service completion by 30%.',
-            'Fixed bugs and improved performance across 4 production back-end services.',
-        ],
-        stack: ['React', 'Node.js', 'MySQL'],
     },
 ]
 

@@ -83,7 +83,7 @@ export default function Footer() {
                         <div style={{ width: 28, height: 28, borderRadius: 8, background: 'var(--accent)', display: 'grid', placeItems: 'center' }}>
                             <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 900, fontSize: 12, color: '#060610' }}>D</span>
                         </div>
-                        <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>Dhaya.</span>
+                        <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>Dhayanidhiya M</span>
                     </div>
 
                     <p style={{ color: 'var(--muted)', fontSize: 12 }}>© {year} Dhayanidhiya M. All rights reserved.</p>
