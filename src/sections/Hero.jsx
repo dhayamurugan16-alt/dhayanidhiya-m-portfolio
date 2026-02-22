@@ -25,10 +25,9 @@ function Spot({ children, style = {}, className = '' }) {
 
 const STACK = ['TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Redis', 'Docker', 'AWS', 'Kubernetes']
 const SOCIALS = [
-    { Icon: Github, href: 'https://github.com' },
+    { Icon: Github, href: 'https://github.com/dhayamurugan16-alt' },
     { Icon: Linkedin, href: 'https://linkedin.com' },
-    { Icon: Twitter, href: 'https://twitter.com' },
-    { Icon: Mail, href: 'mailto:dhaya@example.com' },
+    { Icon: Mail, href: 'mailto:dhayamurugan16@gmail.com' },
 ]
 
 export default function Hero() {
@@ -55,7 +54,7 @@ export default function Hero() {
                         <div className="bento hero-photo" style={{ flex: 1, overflow: 'hidden', position: 'relative', minHeight: 310 }}>
                             <img
                                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=520&auto=format&fit=crop&q=88"
-                                alt="Dhayananth — Software Engineer"
+                                alt="Dhayanidhiya M — Software Engineer"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center', display: 'block' }}
                             />
                             {/* subtle bottom fade */}
@@ -70,7 +69,7 @@ export default function Hero() {
                                 display: 'flex', flexDirection: 'column', gap: 1,
                             }}>
                                 <p style={{ fontFamily: 'Onest', fontWeight: 700, fontSize: 14.5, color: '#fff', lineHeight: 1.2 }}>
-                                    Dhayananth
+                                    Dhayanidhiya M
                                 </p>
                                 <p style={{ fontSize: 11.5, color: 'rgba(255,255,255,.5)' }}>Software Engineer</p>
                             </div>
@@ -104,7 +103,7 @@ export default function Hero() {
                         }}>
                             {/* top: role label */}
                             <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(0,0,0,0.45)' }}>
-                                Full-Stack Engineer
+                                Software Engineer
                             </p>
 
                             {/* main heading */}
@@ -115,7 +114,7 @@ export default function Hero() {
                                     fontSize: 'clamp(2.2rem, 4.5vw, 3rem)',
                                     color: '#0a0a0a', letterSpacing: '-0.045em', lineHeight: 1.0, marginBottom: 14,
                                 }}>
-                                    Dhayananth.
+                                    Dhayanidhiya M
                                 </h1>
                                 <p style={{ color: 'rgba(0,0,0,0.55)', fontSize: 14.5, lineHeight: 1.75, maxWidth: 380 }}>
                                     I build <strong style={{ color: 'rgba(0,0,0,0.8)' }}>scalable back-end systems</strong> and
@@ -135,19 +134,6 @@ export default function Hero() {
                                     onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
                                     onMouseLeave={e => e.currentTarget.style.transform = 'none'}>
                                     View Projects <ArrowRight size={14} />
-                                </a>
-                                <a href="/resume.pdf" download style={{
-                                    display: 'inline-flex', alignItems: 'center', gap: 7,
-                                    padding: '11px 22px', borderRadius: 12,
-                                    background: 'rgba(0,0,0,.12)', color: 'rgba(0,0,0,.65)',
-                                    fontWeight: 600, fontSize: 13, textDecoration: 'none',
-                                    border: '1px solid rgba(0,0,0,.08)',
-                                    transition: 'background .2s',
-                                }}
-                                    onMouseEnter={e => e.currentTarget.style.background = 'rgba(0,0,0,.2)'}
-                                    onMouseLeave={e => e.currentTarget.style.background = 'rgba(0,0,0,.12)'}>
-                                    <Download size={13} /> Resume
-                                </a>
                             </div>
                         </div>
 
