@@ -25,21 +25,17 @@ const EXP = [
         loc: 'Chennai, India',
         points: [
             'Gained Hands-On Experience in Front-End Web Development.',
-            'Reduced API p95 latency from 800 ms to 120 ms via query optimisation and Redis caching.',
-            'Architected Kafka event streaming, processing 1M+ events/day across decoupled microservices.',
-            'Mentored 5 junior engineers through weekly code reviews and system design sessions.',
+            'Developed a Event Management website using HTML, CSS, Java Script.',
         ],
     },
     {
-        role: 'Software Engineer II',
-        company: 'Stellar Labs',
-        dur: 'Jul 2022 – Dec 2023',
-        loc: 'Remote',
-        type: 'Full-time',
+        role: 'Game Development',
+        company: 'Monolith Research and Training Labs Pvt. Ltd.',
+        dur: 'June 2025 - September 2025',
+        loc: 'Chennai, India',
         points: [
-            'Built analytics dashboard (React + D3.js) adopted by 2,000+ users within 3 months.',
-            'Designed Python ETL pipeline ingesting 50 GB+ of data daily into ClickHouse.',
-            'Integrated Stripe with idempotent webhook handling, cutting payment failures by 40%.',
+            'Gained Hands-On Experience working in a professional IT environment with guidance from senior mentors.',
+            'Improved Technical Skills, Problem-Solving Ability, and Teamwork through assigned tasks and projects.',
         ],
     },
 ]
@@ -77,10 +73,6 @@ export default function Experience() {
                                 <span style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--muted)', fontSize: 12.5 }}>
                                     <MapPin size={11} /> {e.loc}
                                 </span>
-                                <div style={{ display: 'flex', gap: 6, marginTop: 4, flexWrap: 'wrap' }}>
-                                    <span className="tag" style={{ alignSelf: 'flex-start', fontSize: 11 }}>{e.type}</span>
-
-                                </div>
                             </div>
 
                             {/* Content */}
