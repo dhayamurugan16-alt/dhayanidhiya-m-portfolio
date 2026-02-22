@@ -103,7 +103,7 @@ export default function Hero() {
                         }}>
                             {/* top: role label */}
                             <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(0,0,0,0.45)' }}>
-                                Full-Stack Engineer
+                                Software Engineer
                             </p>
 
                             {/* main heading */}
