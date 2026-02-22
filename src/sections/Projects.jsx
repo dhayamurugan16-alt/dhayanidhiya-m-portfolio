@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Github, ExternalLink } from 'lucide-react'
+import { Github } from 'lucide-react'
 
 const PROJECTS = [
     {
@@ -32,40 +32,6 @@ function Card({ p }) {
             style={{ display: 'flex', flexDirection: 'column', cursor: 'default' }}>
             <div className="spot" />
 
-            {/* Image */}
-            <div style={{ position: 'relative', overflow: 'hidden', height: 185, borderRadius: '20px 20px 0 0', flexShrink: 0 }}>
-                <img src={p.img} alt={p.title} className="proj-img" loading="lazy" />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, var(--surf) 0%, transparent 60%)' }} />
-
-                {p.featured && (
-                    <div style={{
-                        position: 'absolute', top: 11, left: 11,
-                        fontSize: 9.5, fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase',
-                        color: '#0a0a0a', background: 'var(--accent)',
-                        padding: '3px 9px', borderRadius: 5,
-                    }}>Featured</div>
-                )}
-
-                <div className="card-links" style={{
-                    position: 'absolute', top: 11, right: 11,
-                    display: 'flex', gap: 7, opacity: 0, transition: 'opacity .2s',
-                }}>
-                    {[{ Icon: Github, label: 'GitHub' }, { Icon: ExternalLink, label: 'Live' }].map(({ Icon, label }) => (
-                        <a key={label} href="#" aria-label={label}
-                            style={{
-                                width: 32, height: 32, borderRadius: 9, display: 'grid', placeItems: 'center',
-                                background: 'rgba(10,10,10,.85)', backdropFilter: 'blur(8px)',
-                                color: 'var(--muted)', textDecoration: 'none',
-                                border: '1px solid var(--border)', transition: 'color .16s, border-color .16s',
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.borderColor = 'var(--accent-br)' }}
-                            onMouseLeave={e => { e.currentTarget.style.color = 'var(--muted)'; e.currentTarget.style.borderColor = 'var(--border)' }}>
-                            <Icon size={12} />
-                        </a>
-                    ))}
-                </div>
-            </div>
-
             {/* Body */}
             <div style={{ padding: '20px 22px 24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 9 }}>
@@ -81,7 +47,7 @@ function Card({ p }) {
                 </div>
             </div>
 
-            <style>{`.bento:hover .card-links{opacity:1!important}.bento:hover .card-title{color:var(--accent)!important}`}</style>
+            <style>{`.bento:hover .card-title{color:var(--accent)!important}`}</style>
         </motion.article>
     )
 }
