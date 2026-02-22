@@ -3,10 +3,9 @@ import { motion } from 'framer-motion'
 import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from 'lucide-react'
 
 const SOCIALS = [
-    { icon: <Github size={17} />, label: 'GitHub', href: 'https://github.com' },
+    { icon: <Github size={17} />, label: 'GitHub', href: 'https://github.com/dhayamurugan16-alt' },
     { icon: <Linkedin size={17} />, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: <Twitter size={17} />, label: 'Twitter', href: 'https://twitter.com' },
-    { icon: <Mail size={17} />, label: 'Email', href: 'mailto:dhaya@example.com' },
+    { icon: <Mail size={17} />, label: 'Email', href: 'mailto:dhayamurugan16@gmail.com' },
 ]
 
 export default function Footer() {
@@ -84,10 +83,10 @@ export default function Footer() {
                         <div style={{ width: 28, height: 28, borderRadius: 8, background: 'var(--accent)', display: 'grid', placeItems: 'center' }}>
                             <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 900, fontSize: 12, color: '#060610' }}>D</span>
                         </div>
-                        <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>Dhaya.</span>
+                        <span style={{ fontFamily: 'Onest, sans-serif', fontWeight: 700, fontSize: 14, color: 'var(--text)' }}>Dhayanidhiya M</span>
                     </div>
 
-                    <p style={{ color: 'var(--muted)', fontSize: 12 }}>© {year} Dhayananth. All rights reserved.</p>
+                    <p style={{ color: 'var(--muted)', fontSize: 12 }}>© {year} Dhayanidhiya M. All rights reserved.</p>
 
                     {/* Socials */}
                     <div style={{ display: 'flex', gap: 20 }}>
