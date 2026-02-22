@@ -18,7 +18,7 @@ export default function Work() {
 
                 <motion.div initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                     style={{ marginBottom: 44 }}>
-                    <p className="eyebrow">Selected Work</p>
+                    <p className="eyebrow">Projects</p>
                     <div style={{ marginBottom: 22 }}>
                         <h2 className="d-lg" style={{ color: 'var(--text)' }}>Things I've built.</h2>
                     </div>
